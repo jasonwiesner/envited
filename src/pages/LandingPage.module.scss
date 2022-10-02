@@ -1,0 +1,45 @@
+@use '../layout/colours' as *;
+@use '../layout/consts' as consts;
+.landingPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $secondary-purple-light;
+  height: 100vh;
+  h1 {
+    padding-top: 50px;
+    min-width: 300px;
+    color: $dark-purple;
+    font-size: consts.$font-size-14;
+    margin: 0;
+    line-height: 36px;
+    div {
+      background: $purple-to-pink;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  p {
+    width: 375px;
+    min-width: 100px;
+    font-size: consts.$font-size-2;
+    color: $neutral-dark;
+    max-width: 450px;
+    margin-top: 10px;
+  }
+  .image {
+    height: 350px;
+    margin: 0px;
+    border-radius: 50px;
+  }
+  button {
+    margin: 30px;
+    height: 50px;
+    width: 190px;
+    border-radius: 10px;
+    background-image: $purple-to-pink;
+    color: white;
+    font-weight: bold;
+    font-size: consts.$font-size-1;
+  }
+}

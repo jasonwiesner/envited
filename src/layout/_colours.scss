@@ -1,0 +1,28 @@
+// PRIMARY PALETTE
+$dark-purple: #240D57;
+$purple: #501FC1;
+$light-purple: #8456EC;
+$pink: #E87BF8;
+$white: white;
+
+// SECONDARY PALETTE
+$secondary-purple-dark: #CCB6FF;
+$secondary-purple: #EDE5FF;
+$secondary-purple-light: #F6F2FF;
+
+// ALERT COLOURS
+$alert-red-light: #FFD7E0;
+$alert-red: #E61445;
+$alert-green-light: #D3FFE2;
+$alert-green: #00805E;
+
+// NEUTRALS
+$neutral-dark: #4F4F4F;
+$neutral: #828282;
+$neutral-light: #BDBDBD;
+$secondary-neutral-dark: #E0E0E0;
+$secondary-neutral: #F2F2F2;
+$secondary-neutral-light: #BDBDBD;
+
+// HELPERS
+$purple-to-pink: linear-gradient(to right, $purple, $pink);

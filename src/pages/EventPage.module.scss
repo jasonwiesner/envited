@@ -1,0 +1,101 @@
+@use '../layout/colours' as *;
+@use '../layout/consts' as consts;
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: $secondary-purple-light;
+  height: 100vh;
+  img {
+    width: 100vw;
+  }
+  .eventInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: consts.$font-size-2;
+    margin-left: 25px;
+    h1 {
+      margin: 25px 0px 0px 0px;
+      color: $dark-purple;
+    }
+    p {
+      margin-top: 10px;
+      color: $neutral;
+      font-weight: 400;
+    }
+    .hostName {
+      font-weight: 700;
+    }
+    .dateLocation {
+      display: flex;
+      justify-content: flex-start;
+      .calendarIcon {
+        text-align: left;
+        font-size: consts.$font-size-14;
+        color: $light-purple;
+      }
+      .locationIcon {
+        text-align: left;
+        font-size: consts.$font-size-14;
+        path {
+          stroke: $light-purple;
+        }
+      }
+      .date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: consts.$font-size-1;
+        padding: 10px;
+        color: $neutral-dark;
+        .rightCaretIcon {
+          position: relative;
+          left: 25px;
+          bottom: 10px;
+          font-size: consts.$font-size-4;
+          color: $neutral;
+        }
+        .fromDate {
+          font-size: consts.$font-size-3;
+          font-weight: bold;
+          color: $dark-purple;
+        }
+      }
+      .toDateSpan {
+        font-weight: bold;
+      }
+      .toDate {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: consts.$font-size-1;
+        padding: 10px;
+        color: $neutral-dark;
+        .street {
+          font-size: consts.$font-size-3;
+          font-weight: bold;
+          color: $dark-purple;
+        }
+      }
+    }
+    .rightCaretIcon2 {
+      position: relative;
+      left: 85px;
+      top: 20px;
+      font-size: consts.$font-size-4;
+      color: $neutral;
+    }
+  }
+  .iconBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px $secondary-neutral;
+    margin: 5px;
+    padding: 5px;
+  }
+}

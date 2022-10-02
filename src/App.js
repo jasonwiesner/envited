@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'; 
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import CreateEventPage from './pages/CreateEventPage';
+import EventPage from './pages/EventPage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
+  const [state, setState] = useState({
+    eventName: '',
+    hostName: '',
+    fromDateTime: '',
+    toDateTime: '',
+    streetName: '',
+    suburb: '',
+    state: '',
+    postCode: '',
+    eventImageUrl: ''
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/create" element={<CreateEventPage setState={setState}/>} />
+          <Route path="/event" element={<EventPage state={state}/>} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

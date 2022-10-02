@@ -1,0 +1,25 @@
+/* Smartphones (portrait and landscape) ----------- */
+$mobile_portrait_landscape: 'only screen and (min-device-width : 320px) and (max-device-width : 768px)';
+
+/* Smartphones (landscape) ----------- */
+$mobile_landscape: ' only screen and (min-width : 321px)';
+
+/* Smartphones (portrait) ----------- */
+$mobile_portrait: ' only screen and (max-width : 320px)';
+
+/* iPads (portrait and landscape) ----------- */
+$tablets_portrait_landscape: ' only screen and (min-device-width : 768px) and (max-device-width : 1024px)';
+
+/* iPads (landscape) ----------- */
+$tablets_landscape: ' only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : landscape)';
+
+/* iPads (portrait) ----------- */
+$tablets_portrait: ' only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)';
+
+/* Desktops and laptops ----------- */
+$browser_normal: ' only screen and (min-width : 1024px)';
+
+/* Large screens ----------- */
+$browser_large: ' only screen and (min-width : 1920px)';
+
+$tablets_and_browsers: ' only screen and (min-device-width : 600px)';
